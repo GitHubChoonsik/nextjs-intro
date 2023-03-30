@@ -5,9 +5,10 @@ interface Props {
 }
 
 export default function Seo({ title }: Props) {
+  const fullTitle = `${title} | Next Movies`;
   return (
     <Head>
-      <title>{title} | Next Movies</title>
+      <title>{fullTitle}</title>
     </Head>
   );
 }
